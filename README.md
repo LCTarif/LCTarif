@@ -1,5 +1,5 @@
 <a href="https://github.com/LCTarif/beporowa">
-  <img src="assets/title-screen.svg" width="100%" alt="An arcade title screen painted in rickshaw-art colours: a rainy night street in a Dhaka-like city with a minaret and a বেপরোয়া signboard, a police car chasing a red car, and the title তারিফুল হক, LC Tarif, game developer, Dhaka. Press start.">
+  <img src="assets/title-screen.svg" width="100%" alt="An arcade title screen painted in rickshaw-art colours: a Dhaka-like street at sunset with a ringed sun, birds, a minaret and a বেপরোয়া signboard, a police car chasing a red car, and the title Tariful Hoque, @LCTarif, game developer, Dhaka. Press start.">
 </a>
 
 <p align="center">
@@ -14,7 +14,7 @@
 > *"A boy who is very stubborn about getting his work done."*
 
 <table>
-  <tr><td><b>Player</b></td><td>LC Tarif · তারিফুল হক</td></tr>
+  <tr><td><b>Player</b></td><td>Tariful Hoque · LC Tarif</td></tr>
   <tr><td><b>Class</b></td><td>Game developer · CSE graduate, East West University</td></tr>
   <tr><td><b>Home turf</b></td><td>Dhaka, Bangladesh</td></tr>
   <tr><td><b>Main quest</b></td><td><a href="https://github.com/LCTarif/beporowa">বেপরোয়া</a>, a Bangla-first street racer for the browser</td></tr>
