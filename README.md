@@ -1,5 +1,5 @@
 <a href="https://beporowa.netlify.app">
-  <img src="assets/title-screen.svg" width="100%" alt="An arcade title screen, painted flat: a Dhaka-like street at night in dark navy and gold, with a ringed gold sun, birds, a minaret and a বেপরোয়া signboard, a police car chasing a red car, and the title Tariful Hoque, @LCTarif, game developer, Dhaka. Press start.">
+  <img src="assets/title-screen-navy.svg" width="100%" alt="An arcade title screen, painted flat: a Dhaka-like street at night in dark navy and gold, with a ringed gold sun, birds, a minaret and a বেপরোয়া signboard, a police car chasing a red car, and the title Tariful Hoque, @LCTarif, game developer, Dhaka. Press start.">
 </a>
 
 <p align="center">

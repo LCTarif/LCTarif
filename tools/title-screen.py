@@ -1,4 +1,4 @@
-"""Draws assets/title-screen.svg, the animated title card at the top of the profile README.
+"""Draws assets/title-screen-navy.svg, the animated title card at the top of the profile README.
 
 A Dhaka street at night in dark navy and gold, the same palette as the LinkedIn card:
 flat navy bands in the sky, a ringed gold sun with turning rays, navy building fronts
@@ -14,7 +14,7 @@ import random
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 FONTS = ROOT.parent / 'beporowa' / 'public' / 'fonts'
-OUT = ROOT / 'assets' / 'title-screen.svg'
+OUT = ROOT / 'assets' / 'title-screen-navy.svg'
 
 W, H = 1280, 420
 SOOT, TIN, TOMATO, MARIGOLD, TEAL, INDIGO = '#070d1d', '#f3efe6', '#d8402b', '#2a4180', '#2a4180', '#11204a'
