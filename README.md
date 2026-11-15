@@ -13,13 +13,13 @@
 
 > *"A boy who is very stubborn about getting his work done."*
 
-| | |
-|---|---|
-| **Player** | LC Tarif · তারিফুল হক |
-| **Class** | Game developer · CSE graduate, East West University |
-| **Home turf** | Dhaka, Bangladesh |
-| **Main quest** | [বেপরোয়া](https://github.com/LCTarif/beporowa), a Bangla-first street racer for the browser |
-| **Play style** | Bangla first, every build tested |
+<table>
+  <tr><td><b>Player</b></td><td>LC Tarif · তারিফুল হক</td></tr>
+  <tr><td><b>Class</b></td><td>Game developer · CSE graduate, East West University</td></tr>
+  <tr><td><b>Home turf</b></td><td>Dhaka, Bangladesh</td></tr>
+  <tr><td><b>Main quest</b></td><td><a href="https://github.com/LCTarif/beporowa">বেপরোয়া</a>, a Bangla-first street racer for the browser</td></tr>
+  <tr><td><b>Play style</b></td><td>Bangla first, every build tested</td></tr>
+</table>
 
 ## ▸ Main quest: বেপরোয়া (Beporowa)
 
