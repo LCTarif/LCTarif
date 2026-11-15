@@ -1,5 +1,5 @@
 <a href="https://updatedportfoloiwebsite.netlify.app/">
-  <img src="https://raw.githubusercontent.com/Majortarif/Majortarif/main/assets/lctarif-banner.png" width="100%" alt="তারিফুল হক · Tariful Hoque. Games, machine learning and Bangla-first web, made in Dhaka. CSE at East West University, machine learning and AI, game development with Three.js, UI/UX.">
+  <img src="assets/banner.png" width="100%" alt="তারিফুল হক · Tariful Hoque. Games, machine learning and Bangla-first web, made in Dhaka. CSE at East West University, machine learning and AI, game development with Three.js, UI/UX.">
 </a>
 
 <p align="center">
