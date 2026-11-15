@@ -1,12 +1,12 @@
 <a href="https://beporowa.netlify.app">
-  <img src="assets/title-screen.svg" width="100%" alt="An arcade title screen painted in rickshaw-art colours: a Dhaka-like street at sunset with a ringed sun, birds, a minaret and a বেপরোয়া signboard, a police car chasing a red car, and the title Tariful Hoque, @LCTarif, game developer, Dhaka. Press start.">
+  <img src="assets/title-screen.svg" width="100%" alt="An arcade title screen painted in rickshaw-art colours: a Dhaka-like street at night in dark navy and gold, with a ringed gold sun, birds, a minaret and a বেপরোয়া signboard, a police car chasing a red car, and the title Tariful Hoque, @LCTarif, game developer, Dhaka. Press start.">
 </a>
 
 <p align="center">
-  <a href="https://beporowa.netlify.app"><img src="https://img.shields.io/badge/Play_now-beporowa.netlify.app-d8402b?style=for-the-badge&logo=netlify&logoColor=white" alt="Play now: beporowa.netlify.app"></a>
-  <a href="https://updatedportfoloiwebsite.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-f2a20c?style=for-the-badge&logo=netlify&logoColor=black" alt="Portfolio"></a>
-  <a href="https://www.linkedin.com/in/tariful-hoque-582321259/"><img src="https://img.shields.io/badge/LinkedIn-1d2a5b?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="https://github.com/Majortarif"><img src="https://img.shields.io/badge/Main_GitHub-@Majortarif-0f7f7a?style=for-the-badge&logo=github&logoColor=white" alt="Main GitHub: Majortarif"></a>
+  <a href="https://beporowa.netlify.app"><img src="https://img.shields.io/badge/Play_now-beporowa.netlify.app-b8862f?style=for-the-badge&logo=netlify&logoColor=white" alt="Play now: beporowa.netlify.app"></a>
+  <a href="https://updatedportfoloiwebsite.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-e9b44c?style=for-the-badge&logo=netlify&logoColor=black" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/tariful-hoque-582321259/"><img src="https://img.shields.io/badge/LinkedIn-1a2c5e?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://github.com/Majortarif"><img src="https://img.shields.io/badge/Main_GitHub-@Majortarif-22386f?style=for-the-badge&logo=github&logoColor=white" alt="Main GitHub: Majortarif"></a>
 </p>
 
 ## ▸ Player 1
@@ -52,14 +52,14 @@
 
 | | Achievement | How it was earned |
 |:---:|---|---|
-| ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **Seven Stages Cleared** | Took বেপরোয়া from an empty road to online leaderboards and friend races, in seven phases |
-| ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **All Green** | 279 automated tests, every one passing |
-| ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **On Air** | A Bangla radio DJ and police radio chatter, playing inside the game |
-| ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **Monsoon Maker** | Rain, flooded roads, fog and load-shedding across a whole day of weather |
-| ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **Everyone Plays** | Colour-vision modes, subtitle sizes, high contrast, key remapping and tilt steering |
-| ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **Shipped It** | [MessMate BD](https://messmate-bd.netlify.app/) is live for bachelor messes in Dhaka |
-| ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **Graduate** | Computer Science and Engineering, East West University |
-| ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **Go Live** | Put বেপরোয়া on the open web for anyone to play, at [beporowa.netlify.app](https://beporowa.netlify.app) |
+| ![Unlocked](https://img.shields.io/badge/UNLOCKED-e9b44c?style=flat-square) | **Seven Stages Cleared** | Took বেপরোয়া from an empty road to online leaderboards and friend races, in seven phases |
+| ![Unlocked](https://img.shields.io/badge/UNLOCKED-e9b44c?style=flat-square) | **All Green** | 279 automated tests, every one passing |
+| ![Unlocked](https://img.shields.io/badge/UNLOCKED-e9b44c?style=flat-square) | **On Air** | A Bangla radio DJ and police radio chatter, playing inside the game |
+| ![Unlocked](https://img.shields.io/badge/UNLOCKED-e9b44c?style=flat-square) | **Monsoon Maker** | Rain, flooded roads, fog and load-shedding across a whole day of weather |
+| ![Unlocked](https://img.shields.io/badge/UNLOCKED-e9b44c?style=flat-square) | **Everyone Plays** | Colour-vision modes, subtitle sizes, high contrast, key remapping and tilt steering |
+| ![Unlocked](https://img.shields.io/badge/UNLOCKED-e9b44c?style=flat-square) | **Shipped It** | [MessMate BD](https://messmate-bd.netlify.app/) is live for bachelor messes in Dhaka |
+| ![Unlocked](https://img.shields.io/badge/UNLOCKED-e9b44c?style=flat-square) | **Graduate** | Computer Science and Engineering, East West University |
+| ![Unlocked](https://img.shields.io/badge/UNLOCKED-e9b44c?style=flat-square) | **Go Live** | Put বেপরোয়া on the open web for anyone to play, at [beporowa.netlify.app](https://beporowa.netlify.app) |
 
 ## ▸ Loadout
 
@@ -69,7 +69,7 @@
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js">
   <img src="https://img.shields.io/badge/WebGL2-990000?style=flat-square&logo=webgl&logoColor=white" alt="WebGL2">
-  <img src="https://img.shields.io/badge/Rapier_physics-0f7f7a?style=flat-square" alt="Rapier physics">
+  <img src="https://img.shields.io/badge/Rapier_physics-22386f?style=flat-square" alt="Rapier physics">
   <img src="https://img.shields.io/badge/Web_Audio-1d2a5b?style=flat-square" alt="Web Audio">
   <img src="https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite">
   <img src="https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white" alt="Vitest">

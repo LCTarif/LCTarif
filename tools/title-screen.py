@@ -1,8 +1,8 @@
 """Draws assets/title-screen.svg, the animated title card at the top of the profile README.
 
-A Dhaka street at sunset, painted the way a rickshaw artist would: flat bands of
-colour in the sky, a big ringed sun with turning rays, painted building fronts,
-black-and-yellow kerbs, and a police car chasing a red car on the left of the road.
+A Dhaka street at night in dark navy and gold, the same palette as the LinkedIn card:
+flat navy bands in the sky, a ringed gold sun with turning rays, navy building fronts
+with lit windows, striped kerbs, and a police car chasing a red car on the left of the road.
 Fonts are embedded from বেপরোয়া's bundled woff2 files, so the card looks the same everywhere.
 
 Run from the repo root:  python tools/title-screen.py
@@ -17,11 +17,12 @@ FONTS = ROOT.parent / 'beporowa' / 'public' / 'fonts'
 OUT = ROOT / 'assets' / 'title-screen.svg'
 
 W, H = 1280, 420
-SOOT, TIN, TOMATO, MARIGOLD, TEAL, INDIGO = '#1b1410', '#efe3c8', '#d8402b', '#f2a20c', '#0f7f7a', '#1d2a5b'
-SUN, CREAM, RANI = '#ffd23f', '#fff3c4', '#c2185b'
-SKY = ['#1d1b4f', '#3a1d5e', '#6e1d5c', '#b0174f', '#e0413a', '#f2771c', '#f9b233']
-FAR = '#4a1648'
-FRONTS = ['#0f7f7a', '#d8402b', '#2b3a8c', '#e89a0c', '#b0174f', '#3f8f2f']
+SOOT, TIN, TOMATO, MARIGOLD, TEAL, INDIGO = '#070d1d', '#f3efe6', '#d8402b', '#2a4180', '#2a4180', '#11204a'
+SUN, CREAM, RANI = '#e9b44c', '#f3efe6', '#b8862f'
+SKY = ['#060c1c', '#081127', '#0b1630', '#0e1b3a', '#112045', '#14264f', '#182c5a']
+FAR = '#0e1838'
+FRONTS = ['#1a2c5e', '#22386f', '#14224a', '#2a4180', '#1d3266', '#26407a']
+CORNICE, DARK_NAVY, MUTED = '#3a5291', '#0b1630', '#9aabcb'
 STREET = 318
 SUN_X, SUN_Y = 1150, 150
 rng = random.Random(11)
@@ -50,7 +51,7 @@ add = s.append
 
 add(f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="t d">
 <title id="t">Tariful Hoque, player one</title>
-<desc id="d">An arcade title screen painted in rickshaw-art colours. A Dhaka-like street at sunset under bands of indigo, violet, pink, red, orange and gold, with a big ringed sun, birds, a minaret, a বেপরোয়া signboard and painted building fronts. A police car chases a red car along the road. The title reads Tariful Hoque, at LCTarif, game developer, Dhaka, press start, and the top strip says the game is at beporowa.netlify.app.</desc>
+<desc id="d">An arcade title screen painted in rickshaw-art colours. A Dhaka-like street at night under bands of dark navy, with a ringed gold sun, birds, a minaret, a বেপরোয়া signboard and painted building fronts. A police car chases a red car along the road. The title reads Tariful Hoque, at LCTarif, game developer, Dhaka, press start, and the top strip says the game is at beporowa.netlify.app.</desc>
 <defs>
 <style>
 @font-face{{font-family:Galada;src:url(data:font/woff2;base64,{font('galada-bengali-400-normal.woff2')}) format('woff2')}}
@@ -98,10 +99,10 @@ for k in range(20):
     p2 = (SUN_X + 82 * math.cos(a + da), SUN_Y + 82 * math.sin(a + da))
     p3 = (SUN_X + 330 * math.cos(a), SUN_Y + 330 * math.sin(a))
     rays.append(f'{p1[0]:.1f},{p1[1]:.1f} {p3[0]:.1f},{p3[1]:.1f} {p2[0]:.1f},{p2[1]:.1f}')
-add(f'<g class="rays" fill="{SUN}" opacity=".28">' + ''.join(f'<polygon points="{r}"/>' for r in rays) + '</g>')
+add(f'<g class="rays" fill="{SUN}" opacity=".13">' + ''.join(f'<polygon points="{r}"/>' for r in rays) + '</g>')
 add(f'''<circle cx="{SUN_X}" cy="{SUN_Y}" r="70" fill="{SUN}" stroke="#000" stroke-width="3"/>
-<circle cx="{SUN_X}" cy="{SUN_Y}" r="57" fill="none" stroke="#f2771c" stroke-width="6"/>
-<circle cx="{SUN_X}" cy="{SUN_Y}" r="44" fill="none" stroke="{TOMATO}" stroke-width="4"/>
+<circle cx="{SUN_X}" cy="{SUN_Y}" r="57" fill="none" stroke="{RANI}" stroke-width="6"/>
+<circle cx="{SUN_X}" cy="{SUN_Y}" r="44" fill="none" stroke="{DARK_NAVY}" stroke-width="4"/>
 <circle cx="{SUN_X}" cy="{SUN_Y}" r="31" fill="{CREAM}" stroke="#000" stroke-width="2"/>''')
 
 # Birds, the way rickshaw painters draw them.
@@ -131,7 +132,7 @@ lit = []
 for i, (bx, bw, top) in enumerate(buildings):
     front = INDIGO if i == 11 else FRONTS[(i * 4 + 1) % len(FRONTS)]
     add(f'<rect x="{bx}" y="{top}" width="{bw}" height="{STREET - top + 2}" fill="{front}" stroke="#000" stroke-width="2"/>')
-    add(f'<rect x="{bx - 3}" y="{top - 3}" width="{bw + 6}" height="7" fill="{TIN}" stroke="#000" stroke-width="2"/>')
+    add(f'<rect x="{bx - 3}" y="{top - 3}" width="{bw + 6}" height="7" fill="{CORNICE}" stroke="#000" stroke-width="2"/>')
     cols, rows = (bw - 10) // 18, (STREET - top - 16) // 22
     cls = f' class="shed" style="animation-delay:{shed[i]}s"' if i in shed else ''
     add(f'<g{cls}>')
@@ -148,23 +149,23 @@ for i, (bx, bw, top) in enumerate(buildings):
 # A hand-painted tin signboard on the tallest roof.
 add(f'''<path d="M876 160V176M986 160V176" stroke="#000" stroke-width="4"/>
 <rect x="846" y="112" width="170" height="50" fill="{TIN}" stroke="#000" stroke-width="3"/>
-<rect x="852" y="118" width="158" height="38" fill="none" stroke="{RANI}" stroke-width="2"/>
-<text x="931" y="148" text-anchor="middle" class="bn" font-size="31" fill="{TOMATO}">বেপরোয়া</text>''')
+<rect x="852" y="118" width="158" height="38" fill="none" stroke="{SUN}" stroke-width="2"/>
+<text x="931" y="148" text-anchor="middle" class="bn" font-size="31" fill="{INDIGO}">বেপরোয়া</text>''')
 
 # The street: black-and-yellow kerb, road, lane marks and sunset in the puddles.
 add(f'<rect x="0" y="{STREET}" width="{W}" height="9" fill="{MARIGOLD}" stroke="#000" stroke-width="2"/>')
 for x in range(0, W, 48):
-    add(f'<rect x="{x}" y="{STREET + 1}" width="24" height="7" fill="#000"/>')
+    add(f'<rect x="{x}" y="{STREET + 1}" width="24" height="7" fill="{DARK_NAVY}"/>')
 add(f'<rect x="0" y="{STREET + 9}" width="{W}" height="{H - STREET - 9}" fill="{SOOT}"/>')
 for x in range(26, W, 84):
-    add(f'<rect x="{x}" y="362" width="42" height="4" fill="{TIN}" opacity=".6"/>')
-puddle = [SUN, '#f2771c', RANI, '#e0413a']
+    add(f'<rect x="{x}" y="362" width="42" height="4" fill="{TIN}" opacity=".35"/>')
+puddle = [SUN, CREAM, MUTED, RANI]
 for i, wx in enumerate(sorted(set(lit))[::3]):
     add(f'<rect class="sh" style="animation-delay:{(i % 5) * 0.31:.2f}s" x="{wx - 3}" y="{334 + (i * 7) % 20}" '
         f'width="{rng.randint(12, 26)}" height="2.5" fill="{puddle[i % len(puddle)]}"/>')
 
 # A red car with the police on its tail, driving on the left.
-add(f'<g class="drive"><g transform="translate(0 362)">{car(TOMATO, SUN, TEAL)}</g></g>')
+add(f'<g class="drive"><g transform="translate(0 362)">{car(SUN, INDIGO, TEAL)}</g></g>')
 add(f'''<g class="drive cop"><g transform="translate(0 362)">{car(TIN, INDIGO, '#9fb7c9', f"""
       <rect class="sa" x="64" y="-12" width="12" height="6" fill="{TOMATO}" stroke="#000" stroke-width="1.5"/>
       <rect class="sb" x="78" y="-12" width="12" height="6" fill="#3d6cd8" stroke="#000" stroke-width="1.5"/>""")}</g></g>''')
@@ -172,18 +173,18 @@ add(f'''<g class="drive cop"><g transform="translate(0 362)">{car(TIN, INDIGO, '
 # Title block: the name in English with stacked, painted shadows.
 name = 'TARIFUL HOQUE'
 title = f'x="56" y="186" class="lat" font-size="78" letter-spacing="3"'
-add(f'''<text x="60" y="98" class="lat" font-size="15" letter-spacing="5" fill="{TIN}" stroke="#000" stroke-width="3" paint-order="stroke">PLAYER 1 · READY</text>
-<text {title} transform="translate(9 9)" fill="{TEAL}" stroke="#000" stroke-width="4" paint-order="stroke">{name}</text>
+add(f'''<text x="60" y="98" class="lat" font-size="15" letter-spacing="5" fill="{MUTED}" stroke="#000" stroke-width="3" paint-order="stroke">PLAYER 1 · READY</text>
+<text {title} transform="translate(9 9)" fill="{MARIGOLD}" stroke="#000" stroke-width="4" paint-order="stroke">{name}</text>
 <text {title} transform="translate(5 5)" fill="{RANI}" stroke="#000" stroke-width="4" paint-order="stroke">{name}</text>
-<text {title} fill="{SUN}" stroke="#000" stroke-width="4" paint-order="stroke">{name}</text>
+<text {title} fill="{CREAM}" stroke="#000" stroke-width="4" paint-order="stroke">{name}</text>
 <text x="60" y="236" class="lat" font-size="19" letter-spacing="4" stroke="#000" stroke-width="5" paint-order="stroke"><tspan fill="{CREAM}">@LCTARIF</tspan><tspan fill="{SUN}" dx="14">· GAME DEVELOPER · DHAKA</tspan></text>
-<rect x="56" y="328" width="244" height="36" rx="3" fill="#000" stroke="{RANI}" stroke-width="3"/>
+<rect x="56" y="328" width="244" height="36" rx="3" fill="{DARK_NAVY}" stroke="{SUN}" stroke-width="3"/>
 <g class="blink"><path d="M74 337L89 346L74 355Z" fill="{SUN}"/>
 <text x="100" y="354" class="lat" font-size="19" letter-spacing="4" fill="{SUN}">PRESS START</text></g>''')
 
 # Arcade score strip along the top.
-add(f'''<rect x="0" y="0" width="{W}" height="54" fill="#000"/>
-<text x="40" y="41" class="lat" font-size="17" letter-spacing="3"><tspan fill="{TOMATO}">1UP</tspan><tspan fill="{TIN}" dx="12">TARIFUL HOQUE</tspan></text>
+add(f'''<rect x="0" y="0" width="{W}" height="54" fill="#050a18"/>
+<text x="40" y="41" class="lat" font-size="17" letter-spacing="3"><tspan fill="{SUN}">1UP</tspan><tspan fill="{TIN}" dx="12">TARIFUL HOQUE</tspan></text>
 <text x="{W // 2}" y="41" text-anchor="middle" class="lat" font-size="17" letter-spacing="3"><tspan fill="{TIN}">STAGE</tspan><tspan fill="{SUN}" dx="10">7/7</tspan><tspan fill="{TIN}" dx="10">CLEARED</tspan></text>
 <text x="{W - 40}" y="41" text-anchor="end" class="lat" font-size="17" letter-spacing="3"><tspan fill="{TIN}">PLAY</tspan><tspan fill="{SUN}" dx="10">BEPOROWA.NETLIFY.APP</tspan></text>
 </g>
