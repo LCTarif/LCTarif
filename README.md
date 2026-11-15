@@ -18,8 +18,8 @@ My machine learning, data and full-stack work lives on my main profile, **[@Majo
 
 ## 🎮 Now building: বেপরোয়া (Beporowa)
 
-<a href="https://github.com/Majortarif/beporowa">
-  <img src="https://raw.githubusercontent.com/Majortarif/beporowa/main/docs/screenshots/03-monsoon-flood.jpg" width="100%" alt="বেপরোয়া: a monsoon street in the city of বর্ষাবাদ, flooded, with traffic, Bangla shop signs and the radio DJ on screen.">
+<a href="https://github.com/LCTarif/beporowa">
+  <img src="https://raw.githubusercontent.com/LCTarif/beporowa/main/docs/screenshots/03-monsoon-flood.jpg" width="100%" alt="বেপরোয়া: a monsoon street in the city of বর্ষাবাদ, flooded, with traffic, Bangla shop signs and the radio DJ on screen.">
 </a>
 
 **A Bangla-first open-world street racer for the browser.** A living city inspired by Dhaka, painted in rickshaw-art colours: lane traffic, police pursuits, a league of ten rivals, a whole day of weather with monsoon floods and load-shedding, and an original soundtrack with a Bangla radio DJ.
@@ -41,7 +41,7 @@ My machine learning, data and full-stack work lives on my main profile, **[@Majo
   <img src="https://img.shields.io/badge/Netlify_Functions-00C7B7?style=flat-square&logo=netlify&logoColor=white" alt="Netlify Functions">
 </p>
 
-[**Source code ↗**](https://github.com/Majortarif/beporowa) · Live demo coming soon
+[**Source code ↗**](https://github.com/LCTarif/beporowa) · Live demo coming soon
 
 ---
 
