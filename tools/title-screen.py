@@ -50,7 +50,7 @@ add = s.append
 
 add(f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="t d">
 <title id="t">Tariful Hoque, player one</title>
-<desc id="d">An arcade title screen painted in rickshaw-art colours. A Dhaka-like street at sunset under bands of indigo, violet, pink, red, orange and gold, with a big ringed sun, birds, a minaret, a বেপরোয়া signboard and painted building fronts. A police car chases a red car along the road. The title reads Tariful Hoque, at LCTarif, game developer, Dhaka, press start.</desc>
+<desc id="d">An arcade title screen painted in rickshaw-art colours. A Dhaka-like street at sunset under bands of indigo, violet, pink, red, orange and gold, with a big ringed sun, birds, a minaret, a বেপরোয়া signboard and painted building fronts. A police car chases a red car along the road. The title reads Tariful Hoque, at LCTarif, game developer, Dhaka, press start, and the top strip says the game is at beporowa.netlify.app.</desc>
 <defs>
 <style>
 @font-face{{font-family:Galada;src:url(data:font/woff2;base64,{font('galada-bengali-400-normal.woff2')}) format('woff2')}}
@@ -185,7 +185,7 @@ add(f'''<text x="60" y="98" class="lat" font-size="15" letter-spacing="5" fill="
 add(f'''<rect x="0" y="0" width="{W}" height="54" fill="#000"/>
 <text x="40" y="41" class="lat" font-size="17" letter-spacing="3"><tspan fill="{TOMATO}">1UP</tspan><tspan fill="{TIN}" dx="12">TARIFUL HOQUE</tspan></text>
 <text x="{W // 2}" y="41" text-anchor="middle" class="lat" font-size="17" letter-spacing="3"><tspan fill="{TIN}">STAGE</tspan><tspan fill="{SUN}" dx="10">7/7</tspan><tspan fill="{TIN}" dx="10">CLEARED</tspan></text>
-<text x="{W - 40}" y="41" text-anchor="end" class="lat" font-size="17" letter-spacing="3"><tspan fill="{TIN}">NEXT</tspan><tspan fill="{SUN}" dx="10">GO LIVE</tspan></text>
+<text x="{W - 40}" y="41" text-anchor="end" class="lat" font-size="17" letter-spacing="3"><tspan fill="{TIN}">PLAY</tspan><tspan fill="{SUN}" dx="10">BEPOROWA.NETLIFY.APP</tspan></text>
 </g>
 <rect x="14" y="14" width="{W - 28}" height="{H - 28}" rx="9" fill="none" stroke="{SUN}" stroke-width="3"/>
 </svg>

@@ -1,9 +1,9 @@
-<a href="https://github.com/LCTarif/beporowa">
+<a href="https://beporowa.netlify.app">
   <img src="assets/title-screen.svg" width="100%" alt="An arcade title screen painted in rickshaw-art colours: a Dhaka-like street at sunset with a ringed sun, birds, a minaret and a বেপরোয়া signboard, a police car chasing a red car, and the title Tariful Hoque, @LCTarif, game developer, Dhaka. Press start.">
 </a>
 
 <p align="center">
-  <a href="https://github.com/LCTarif/beporowa"><img src="https://img.shields.io/badge/Now_building-Beporowa_v0.7.0-d8402b?style=for-the-badge" alt="Now building: Beporowa v0.7.0"></a>
+  <a href="https://beporowa.netlify.app"><img src="https://img.shields.io/badge/Play_now-beporowa.netlify.app-d8402b?style=for-the-badge&logo=netlify&logoColor=white" alt="Play now: beporowa.netlify.app"></a>
   <a href="https://updatedportfoloiwebsite.netlify.app/"><img src="https://img.shields.io/badge/Portfolio-f2a20c?style=for-the-badge&logo=netlify&logoColor=black" alt="Portfolio"></a>
   <a href="https://www.linkedin.com/in/tariful-hoque-582321259/"><img src="https://img.shields.io/badge/LinkedIn-1d2a5b?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://github.com/Majortarif"><img src="https://img.shields.io/badge/Main_GitHub-@Majortarif-0f7f7a?style=for-the-badge&logo=github&logoColor=white" alt="Main GitHub: Majortarif"></a>
@@ -44,9 +44,9 @@
 |---|---|
 | Stages 1 to 7: the city, traffic, police, দ্য রিং, the garage, weather, photo mode, replays, ghosts, daily চ্যালেঞ্জ and races with friends | `CLEARED` |
 | 279 automated tests | `ALL GREEN` |
-| A live demo on the web | `NEXT LEVEL` |
+| Live on the web at [beporowa.netlify.app](https://beporowa.netlify.app) | `CLEARED` |
 
-[**▸ Source code**](https://github.com/LCTarif/beporowa) · [**▸ Release v0.7.0**](https://github.com/LCTarif/beporowa/releases/tag/v0.7.0) · Live demo coming soon
+[**▸ Play now**](https://beporowa.netlify.app) · [**▸ Source code**](https://github.com/LCTarif/beporowa) · [**▸ Release v0.7.0**](https://github.com/LCTarif/beporowa/releases/tag/v0.7.0)
 
 ## ▸ Achievements
 
@@ -59,7 +59,7 @@
 | ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **Everyone Plays** | Colour-vision modes, subtitle sizes, high contrast, key remapping and tilt steering |
 | ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **Shipped It** | [MessMate BD](https://messmate-bd.netlify.app/) is live for bachelor messes in Dhaka |
 | ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **Graduate** | Computer Science and Engineering, East West University |
-| ![Locked](https://img.shields.io/badge/LOCKED-6b6b6b?style=flat-square) | **Go Live** | Put বেপরোয়া on the open web for anyone to play. Coming soon |
+| ![Unlocked](https://img.shields.io/badge/UNLOCKED-f2a20c?style=flat-square) | **Go Live** | Put বেপরোয়া on the open web for anyone to play, at [beporowa.netlify.app](https://beporowa.netlify.app) |
 
 ## ▸ Loadout
 
