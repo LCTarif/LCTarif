@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<title>LCTarif banner</title>
+<style>
+  @font-face { font-family: 'Galada'; src: url('../../beporowa/public/fonts/galada-bengali-400-normal.woff2') format('woff2'); unicode-range: U+0980-09FE, U+200C-200D, U+25CC; }
+  @font-face { font-family: 'Galada'; src: url('../../beporowa/public/fonts/galada-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+2000-206F; }
+  @font-face { font-family: 'Anek Bangla'; font-weight: 800; src: url('../../beporowa/public/fonts/anek-bangla-bengali-800-normal.woff2') format('woff2'); unicode-range: U+0980-09FE, U+200C-200D; }
+  @font-face { font-family: 'Anek Bangla'; font-weight: 800; src: url('../../beporowa/public/fonts/anek-bangla-latin-800-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+2000-206F; }
+  @font-face { font-family: 'Hind Siliguri'; font-weight: 500; src: url('../../beporowa/public/fonts/hind-siliguri-bengali-500-normal.woff2') format('woff2'); unicode-range: U+0980-09FE, U+200C-200D; }
+  @font-face { font-family: 'Hind Siliguri'; font-weight: 500; src: url('../../beporowa/public/fonts/hind-siliguri-latin-500-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+2000-206F; }
+  @font-face { font-family: 'Hind Siliguri'; font-weight: 700; src: url('../../beporowa/public/fonts/hind-siliguri-latin-700-normal.woff2') format('woff2'); unicode-range: U+0000-00FF, U+2000-206F; }
+
+  :root { --soot: #1b1410; --tin: #efe3c8; --tomato: #d8402b; --marigold: #f2a20c; --teal: #0f7f7a; --indigo: #1d2a5b; --rani: #c2185b; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1280px; height: 400px; background: var(--soot); overflow: hidden; }
+  .stage { position: relative; width: 1280px; height: 400px; background: var(--soot); }
+  /* A tin signboard, hand-painted: hard shadow, a red inner rule, no gradients. */
+  .board { position: absolute; left: 36px; top: 30px; width: 1208px; height: 300px; background: var(--tin); border: 6px solid #000; box-shadow: 10px 10px 0 rgba(0,0,0,.55); }
+  .board::before { content: ''; position: absolute; inset: 9px; border: 3px solid var(--tomato); }
+  .name-bn { position: absolute; left: 70px; top: 30px; font-family: 'Galada'; font-size: 104px; line-height: 1.25; color: var(--tomato); text-shadow: 4px 4px 0 var(--marigold); }
+  .name-en { position: absolute; left: 76px; top: 168px; font-family: 'Anek Bangla'; font-weight: 800; font-size: 38px; color: var(--indigo); }
+  .tag { position: absolute; left: 78px; top: 222px; font-family: 'Hind Siliguri'; font-weight: 500; font-size: 22px; color: var(--soot); }
+  .chips { position: absolute; right: 60px; top: 40px; display: flex; flex-direction: column; gap: 11px; align-items: flex-end; }
+  .chip { font-family: 'Hind Siliguri'; font-weight: 700; font-size: 19px; padding: 4px 14px 3px; border: 3px solid #000; box-shadow: 4px 4px 0 #000; color: var(--tin); transform: rotate(-1.2deg); }
+  .chip:nth-child(2) { transform: rotate(1deg); }
+  .chip:nth-child(4) { transform: rotate(0.8deg); }
+  .c1 { background: var(--teal); } .c2 { background: var(--tomato); } .c3 { background: var(--indigo); } .c4 { background: var(--marigold); color: var(--soot); }
+  .handle { position: absolute; left: 78px; bottom: 24px; font-family: 'Anek Bangla'; font-weight: 800; font-size: 22px; color: var(--soot); }
+  .handle b { color: var(--tomato); }
+  .band { position: absolute; left: 0; right: 0; bottom: 0; height: 58px; background: var(--indigo); border-top: 5px solid #000; display: flex; align-items: center; justify-content: space-around; overflow: hidden; }
+  .bird { position: absolute; left: 640px; top: 40px; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="board">
+    <div class="name-bn">তারিফুল হক</div>
+    <div class="name-en">Tariful Hoque</div>
+    <div class="tag">Games, machine learning and Bangla-first web, made in Dhaka</div>
+    <svg class="bird" width="96" height="60" viewBox="0 0 96 60" aria-hidden="true">
+      <path d="M8 40c14-18 34-24 52-14 6-10 18-16 30-14-8 4-12 10-12 18 0 14-14 24-32 24-18 0-30-6-38-14z" fill="#0f7f7a" stroke="#000" stroke-width="3"/>
+      <path d="M60 26c-10 2-18 10-20 20" fill="none" stroke="#efe3c8" stroke-width="3"/>
+      <circle cx="74" cy="20" r="3" fill="#000"/>
+      <path d="M86 18l9-2-8 6z" fill="#f2a20c" stroke="#000" stroke-width="2"/>
+    </svg>
+    <div class="chips">
+      <div class="chip c1">CSE · East West University</div>
+      <div class="chip c2">Machine Learning &amp; AI</div>
+      <div class="chip c3">Game dev · Three.js</div>
+      <div class="chip c4">UI/UX</div>
+    </div>
+  </div>
+  <div class="band" id="band"></div>
+</div>
+<script>
+  // A rickshaw-art flower band, drawn the same way as বেপরোয়া's photo frames.
+  const band = document.getElementById('band');
+  const colours = [['#d8402b', '#f2a20c'], ['#f2a20c', '#d8402b'], ['#c2185b', '#efe3c8'], ['#efe3c8', '#d8402b']];
+  for (let i = 0; i < 26; i++) {
+    const [petal, heart] = colours[i % colours.length];
+    const flower = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    flower.setAttribute('width', '44');
+    flower.setAttribute('height', '44');
+    flower.setAttribute('viewBox', '-22 -22 44 44');
+    let petals = '';
+    for (let k = 0; k < 8; k++) petals += `<ellipse cx="0" cy="-11" rx="5.5" ry="10" fill="${petal}" stroke="#000" stroke-width="1.6" transform="rotate(${k * 45})"/>`;
+    flower.innerHTML = `<g transform="rotate(${i * 11})">${petals}</g><circle r="6" fill="${heart}" stroke="#000" stroke-width="1.6"/>`;
+    band.appendChild(flower);
+    if (i % 2 === 0) {
+      const leaf = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      leaf.setAttribute('width', '24');
+      leaf.setAttribute('height', '24');
+      leaf.setAttribute('viewBox', '0 0 24 24');
+      leaf.innerHTML = '<path d="M2 20C4 8 12 3 22 2c-1 10-6 18-18 20z" fill="#5fa52f" stroke="#000" stroke-width="1.6"/>';
+      band.appendChild(leaf);
+    }
+  }
+</script>
+</body>
+</html>
